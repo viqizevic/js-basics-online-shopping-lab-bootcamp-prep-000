@@ -18,15 +18,15 @@ function viewCart() {
   if (cart.length === 0) {
     return "Your shopping cart is empty."
   } else {
-    var list = ["In your cart"]
+    var list = []
     for (var i = 0; i < cart.length; i++) {
-      var item = `you have ${cart[i].itemName} at $${cart[i].itemPrice}`
+      var item = `${cart[i].itemName} at $${cart[i].itemPrice}`
       if (cart.length - 1 === i && i !== 0) {
         item = "and " + item
       }
       list.push(item)
     }
-    return list.join(', ') + "."
+    return "In your cart, you have " + list.join(', ') + "."
   }
 }
 
