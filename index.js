@@ -44,8 +44,6 @@ function removeFromCart(item) {
       return cart.splice(i,1)
     }
   }
-  
-  // write your code here
 }
 
 function placeOrder(cardNumber) {
