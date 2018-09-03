@@ -20,7 +20,7 @@ function viewCart() {
   } else {
     var list = ["In your cart"]
     for (var i = 0; i < cart.length; i++) {
-      {name, price} = cart[i]
+      name, price = cart[i]
       item = `you have ${name} at $${price}}`
       if (cart.length - 1 === i && i !== 0) {
         item = "and " + item
