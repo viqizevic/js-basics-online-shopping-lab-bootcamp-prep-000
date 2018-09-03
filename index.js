@@ -26,7 +26,7 @@ function viewCart() {
       }
       list.push(item)
     }
-    return list.join(', ')
+    return list.join(', ') + "."
   }
 }
 
