@@ -23,9 +23,11 @@ function viewCart() {
       [name, price] = cart[i]
       item = `you have ${name} at $${price}}`
       if (cart.length - 1 === i && i !== 0) {
-        
+        item = "and " + item
       }
+      list.push(item)
     }
+    return list.join(', ')
   }
 }
 
